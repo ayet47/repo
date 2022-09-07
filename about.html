@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Group1 Project</title>
+	<meta charset="utf-8">
+	<!-- meta -->
+	<link rel="stylesheet" href="style.css">
+	<!-- main css-->
+	<link rel="shortcut icon" type="image/png" href="images/logo-head.jpg" />
+	<!-- logo link , head -->
+	<link rel="stylesheet" href="fontawesome/css/all.css" />
+	<!-- fontawesome link -->
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<!-- jquery for scrool-top or etc.-->
+	<script src="js/cd-top.js"></script>
+	<!-- script fuction to scrool-up-->
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<img src="images/banner.gif">
+		</div>
+	</header>
+		<nav>
+		<div class="container">
+			<ul>
+				<li class="first "><a href="index.html"  title="Homepage"><i class="fa fa-home"></i> Home</a>
+					<div class="padding"></div>
+				</li>
+				<li class="first "><a href="about.html" class="active" title="About Us"><i class="fas fa-question"></i> About</a>
+					<div class="padding"></div>
+				</li>
+				<li class="first "><a href="profile.html" title="Student Profile"><i class="fas fa-user-alt"></i> Profile</a>
+					<div class="padding"></div>
+				</li>
+				<li class="first "><a href="#contact.html" title="Contact"><i class="fas fa-phone"></i> Contact <span><i class="fas fa-caret-down"></i></span></a>
+					<ul>
+						<div class="contact-content">
+							<br>
+							<img src="images/ice.jpg">
+							<table>
+								<tr>
+									<th>Name</th>
+									<th>Mobile No.</th>
+								</tr>
+								<tr>
+									<td>Super-Admin</td>
+									<td>0912345678</td>
+								</tr>
+								<tr>
+									<td>Admin</td>
+									<td>0912345678</td>
+								</tr>
+							</table>
+
+							<div class="like">
+								<a href="#" style="color:black; background:transparent; text-decoration: underline; ">group1@gmail.com</a>
+								<hr>
+								<h4 style="color:green; text-indent:10px; font-size:20px;">Like Us <i class="fas fa-thumbs-up"></i> </h4>
+								<li><a href="#" style="background:#3b5998; color:white; "><i class="fab fa-facebook-square"></i></a></li>
+								<li><a href="#" style="background:#55acee; color:white;"><i class="fab fa-twitter-square"></i></a> </li>
+							</div>
+						</div>
+					</ul>
+					<div class="padding"></div>
+				</li>
+				
+				<li class="search">
+					<input type="search" name="sesarch" placeholder="search">
+					<button><i class="fa fa-search"></i></button>
+				</li>
+				<div id="clockDisplay" class="clockStyle" style="color:white;"></div>
+			</ul>
+		</div>
+	</nav>
+	<section>
+
+		<br>
+		<div class="container content-about">
+			<h3 style="color:green; opacity:.7;text-indent:60px;">Aabout Us</h3>
+			<img src="images/download.jpg" style="float:left">
+			<p>
+				This website is about the Institute of Computing and Engineering of Davao Oriental State University. The content of this web page is all about the....
+			</p>
+			<p>The Institute of Computer Engineering's research and teaching ac tivities are primarily devoted to all aspects of the direct interaction of computer system s and their environment, from the lowest level of circuit and hardware architectures to safe ty-critical cyber-physical systems like industrial automation & smart grids, healthcare, spa cecraft, and automotive.</p>
+		</div>
+		<br>
+	</section>
+	<footer>
+		<!-- footer -->
+		<div class="cd-top" title="Back to top.">
+			<i class="fas fa-arrow-circle-up"></i>
+		</div>
+		<div class="container">
+			<ul>
+				<div class="link">
+					<h4><i class="fas fa-link"></i> Link1</h4>
+					<div class="style">
+						<li><a href="#" style="background:#3b5998;"><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href="#" style="background:#55acee;"><i class="fab fa-twitter-square"></i></a> </li>
+						<li><a href="#" style="background:#e95950;"><i class="fab fa-instagram"></i></a> </li>
+					</div>
+				</div>
+				<div class="link">
+					<h4><i class="far fa-object-group"></i> Other group</h4>
+					<li><a href="#">Group1</a> </li>
+					<li><a href="#">Group2</a> </li>
+					<li><a href="#">Group3</a> </li>
+					<li><a href="#">Group4</a> </li>
+					<li><a href="#">Group5</a> </li>
+				</div>
+				<div class="link">
+					<h4><i class="fas fa-envelope-square"></i> Email Address</h4>
+					<li><a href="#">ariel@gmail.com</a> </li>
+					<li><a href="#">rich@gmail.com</a> </li>
+					<li><a href="#">fracks@gmail.com</a> </li>
+					<li><a href="#">rich@gmail.com</a> </li>
+					<li><a href="#">fracks@gmail.com</a> </li>
+				</div>
+			</ul>
+			<div class="logo">
+				<a href="#"> <img src="images/sce-3.jpg"></a>
+			</div>
+			<br>
+			<p style="color:white; font-size:18.5px;">Information And Technology</p>
+		</div>
+	</footer>
+	<!-- /footer -->
+	<div class="bottom-footer">
+		<div class="container">
+			<p>Powered by BSIT-1B <span style="color:orange;"><b>Group1</b></span></p>
+		</div>
+	</div>
+</body>
+<!-- script for slideshow  -->
+<script>
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {
+			slideIndex = 1
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex - 1].style.display = "block";
+		dots[slideIndex - 1].className += " active";
+		setTimeout(showSlides, 5000); // Change image every 2 seconds
+	}
+</script>
+<!-- script for slideshow  -->
+<!-- script for render time nav -->
+<script type="text/javascript" language="javascript">
+	function renderTime() {
+		var currentTime = new Date();
+		var diem = "AM";
+		var h = currentTime.getHours();
+		var m = currentTime.getMinutes();
+		var s = currentTime.getSeconds();
+
+		if (h == 0) {
+			h = 12;
+		} else if (h > 12) {
+			h = h - 12;
+			diem = "PM";
+		}
+		if (h < 10) {
+			h = "0" + h;
+		}
+		if (m < 10) {
+			m = "0" + m;
+		}
+		if (s < 10) {
+			s = "0" + s;
+		}
+		var myClock = document.getElementById('clockDisplay');
+		myClock.textContent = h + ":" + m + ":" + s + " " + diem;
+		setTimeout('renderTime()', 1000);
+	}
+	renderTime();
+</script>
+<!-- /script for render time nav -->
+<!-- slide image onclick -->
+<script>
+	var i = 0,
+		images = ["images/ice.jpg", "images/s1.jpg", "images/s2.png", "images/s3.jpg"];
+
+	function mySlide(param) {
+		if (param == 'next') {
+			i++;
+			if (i === images.length) {
+				i = images.length - 1
+			}
+		} else {
+			i--;
+			if (i < 0) {
+				i = 0;
+			}
+		}
+		document.getElementById('slide').src = images[i];
+	}
+</script>
+<!-- /slide image onclick -->
+
+</html>

@@ -1,0 +1,122 @@
+/*profie style*/
+
+section .content table {
+	border-collapse: collapse;
+	overflow: auto;
+	margin-right: 5px;
+}
+
+section .content .profile td {
+	border: solid 1px gray;
+	padding: 2px 13px;
+}
+
+section .content .profile td:nth-child(1) {
+	color: orange;
+}
+
+section .content .profile a {
+	text-decoration: none;
+}
+
+section .content .profile td:nth-child(2) {
+	color: blue;
+}
+
+section .content .profile th {
+	color: white;
+	background: #8f3304;
+	padding: 8px 0px;
+}
+
+section .content .profile tr {
+	font-size: 15px;
+	overflow: auto;
+}
+
+
+/*/profie style*/
+
+
+/*profiling*/
+
+section .content-about img {
+	margin: 10px;
+	width: 160px;
+	float: left;
+}
+
+section .content-about h3 {
+	color: green;
+	opacity: .7;
+	text-indent: 10px;
+}
+
+
+/*/profiling*/
+
+
+/* about */
+
+section .about td {
+	margin: 50px;
+}
+
+section .about {
+	height: 500px;
+	box-shadow: 1px 13px 29px -9px gray;
+}
+
+section .about .h3-1 {
+	text-indent: 40px;
+	text-align: center;
+	color: white;
+	opacity: .9;
+	margin: 0;
+	background: orange;
+}
+
+section .about h3 {
+	color: orange;
+	text-align: center;
+}
+
+section .about img {
+	width: 200px;
+	box-shadow: 0px 14px 25px -9px gray;
+	margin-bottom: 14px;
+	border-radius: 3%;
+	position: relative;
+}
+
+section .about li {
+	list-style: none;
+	margin: 8px;
+}
+
+section .about li a {
+	font-size: 16px;
+	text-decoration: none;
+}
+
+section .about .prof {
+	float: right;
+	margin: 15px;
+	overflow: auto;
+}
+
+section .about table {
+	margin: 50px;
+}
+
+section .about .link {
+	height: 120px;
+	overflow: auto;
+}
+
+section .about .scroll {
+	height: auto;
+}
+
+
+/* /*/
